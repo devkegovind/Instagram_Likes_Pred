@@ -1,0 +1,141 @@
+[2023-08-27 22:22:36,150] 26 root - INFO - Data Ingestion Methods Starts
+[2023-08-27 22:22:36,151] 33 root - INFO - Dataset Read as Pandas DataFrame
+[2023-08-27 22:22:36,151] 41 root - INFO - Train Test Split
+[2023-08-27 22:22:36,161] 51 root - INFO - Data Ingestion is Completed.
+[2023-08-27 22:22:36,177] 96 root - INFO - Read Train & Test Data Completed
+[2023-08-27 22:22:36,203] 99 root - INFO - Obtaining Processing Object
+[2023-08-27 22:22:36,203] 32 root - INFO - Data Transformation Initiated
+[2023-08-27 22:22:36,203] 41 root - INFO - Pipeline Initaited
+[2023-08-27 22:22:36,209] 115 root - INFO - Input_feature_train_df Head:
+             USERNAME  Followers                                                                                                                                                                                                                                                                                                                Hashtags
+0       edwisor_india       2232                                                                                    #WedenesdayWisdom #IndustryInsights#GetSkilledGetHired #reskill #careergoals#DataScience #MachineLearning#MeanStack #WebDevelopment#careergrowth #technology #futuretrends#software #startup #GetSkilled #GetHired#edWisor #DreamJob
+1       _ehab.othman_       3139                                                             #worldcode #coding#python #codeaholics #rstudio #codinglife#worldofprogrammers #datascience#machinelearning #dataviz #data #statistics#macbookpro #peoplewhocode#codeismylife #datavisualization#artificialintelligence #digitalnomads#digitalnomad #travel
+2  monde_informatique       2455                                                                                                                                                                                                                                                              monde_informatique#client #project#product #projectmanager
+3     philosophercoin        279      #Bitcoin #Cryptocurrency#Ethereum #stockmarket #currencytrading#digitalmarketing #litecoin #Currency #ico#token #mining #BitcoinExchange#Blockchain #money #community #crypto#CryptoExchange #fiat #forex #altcoin#stocks #profit  #investor #investment#trader#forextrader #nyse #broker #forexnews#forexanalysis
+4       benasdzimidas        179  #android #design #development#benasdzimidas #graphicdesign #launcher#customisation #material #flat #flatshadow#iconography #ui #ux #graphicdesigner#graphicdesign #photoshop #illustrator#adobe #color #vector #creative #follow#wallpaper #wallpapers #androidwallpaper#photography #minimal #architecture #text#sale
+[2023-08-27 22:22:36,221] 116 root - INFO - Target_feature_train_df Head:
+0    8
+1    3
+2    3
+3    4
+4    2
+[2023-08-27 22:22:36,222] 117 root - INFO - Input_feature_test_df Head:
+        USERNAME  Followers                                                                                                                                                                                                                Hashtags
+0  applewantnews         91               #tvOS #Apple #AppleNews #AppleDesign#WWDC #WWDC18 #WWDC2018#applewatch #iphone #tv #2018 #ios12#interesting #concepts #iphonese#iphonese2 #product #notconfirmed#budget #unknown #cartoon #high#instagram
+1     funnelaico         87  #AI #machinelearning #auto#realtors #tech#fitness #socialselling#artificialintelligence#local #sanantonio#realestate #socialmedia#business #sa#generator #car #innovation#cardealers#entrepreneurs #COO #app#sales #ML
+2     siansocial       1200                                                                                                                #weekend #chill #chilling #Summer#founder #startup #smallbusiness #smallbiz#contentmarketing #consulting
+3   entrancegmbh        122                                                                                                                      #hannover #cebit#digitalisierung #entrancegmbh #wuppertal#startup #iot #AI #artificialintelligence
+4      interwall        118                                                                                 #cebit18 #cebit #hannover #cebit2018#ceyouinabit #messehannover#hannovermesse #artificialintelligence#künstlicheintelligenz #informatik
+[2023-08-27 22:22:36,222] 118 root - INFO - Target_feature_test_df Head:
+0    3
+1    4
+2    2
+3    2
+4    2
+[2023-08-27 22:22:36,241] 124 root - INFO - Applying Preprocessing Object on Training & Testing
+[2023-08-27 22:22:36,241] 130 root - INFO - Train_arr Dataframe Head:
+[[21.         17.          1.08078197  8.        ]
+ [ 0.         60.          1.91393941  3.        ]
+ [43.         64.          1.28562663  3.        ]
+ [50.          4.         -0.71321637  4.        ]
+ [12.         20.         -0.80507496  2.        ]
+ [11.         37.          0.16127744  3.        ]
+ [60.         65.         -0.83079536  2.        ]
+ [38.         49.          0.88053023  2.        ]
+ [32.         11.          0.10340653  2.        ]
+ [22.          7.         -0.70770485  4.        ]
+ [39.         46.         -0.11062399  4.        ]
+ [25.         61.         -0.76190142  2.        ]
+ [34.         32.          0.3468318   4.        ]
+ [41.         22.         -0.40549008  3.        ]
+ [61.         58.          0.5167702  20.        ]
+ [65.         50.          1.50241291  4.        ]
+ [ 2.         41.         -0.15379753  2.        ]
+ [52.         35.          0.14290573  2.        ]
+ [17.         19.         -0.43947776  2.        ]
+ [10.         21.         -0.47989554 11.        ]
+ [18.         31.         -0.81701658  2.        ]
+ [46.         44.         -0.65718262  3.        ]
+ [ 4.         16.         -0.49183715  4.        ]
+ [37.         24.         -0.79221476  2.        ]
+ [24.         15.         -0.95756022  4.        ]
+ [64.         39.         -0.7435297   2.        ]
+ [36.         63.         -0.73158808  3.        ]
+ [ 5.         48.         -0.88774769  2.        ]
+ [14.         25.         -0.20248259  2.        ]
+ [30.         10.          0.12912694  2.        ]
+ [13.         23.         -0.4826513   2.        ]
+ [48.         47.         -0.28882966  3.        ]
+ [26.         36.          1.58875999  7.        ]
+ [ 9.         53.         -0.1299143   2.        ]
+ [62.         27.          0.65272092  4.        ]
+ [54.         38.          1.02842257  2.        ]
+ [63.          0.          0.11442956  2.        ]
+ [57.          8.         -0.62870646  2.        ]
+ [44.          2.         -0.9593974   3.        ]
+ [20.         28.         -0.8023192   3.        ]
+ [ 6.          6.         -0.54695231  2.        ]
+ [55.         18.         -0.87305032  2.        ]
+ [33.          1.         -0.12623995  2.        ]
+ [ 7.         14.          2.45223077  3.        ]
+ [35.         42.          0.90349488  3.        ]
+ [28.         45.          1.9212881   2.        ]
+ [53.         54.          1.39401977  2.        ]
+ [15.         57.         -0.14828602  2.        ]
+ [51.         43.         -0.92449113  3.        ]
+ [42.          5.          3.16046052  2.        ]
+ [31.         13.         -0.90887517  3.        ]
+ [49.         51.         -0.63789232  3.        ]
+ [ 1.         62.         -0.85559719  2.        ]
+ [50.          4.         -0.71321637  2.        ]
+ [19.         67.         -0.16114622  2.        ]
+ [46.          9.         -0.64983394  4.        ]
+ [66.          3.         -0.66269414  2.        ]
+ [ 3.         59.         -0.73526243  2.        ]
+ [42.          5.          3.16046052  2.        ]
+ [45.         40.         -0.72883233  2.        ]
+ [59.         34.         -0.0775549   2.        ]
+ [27.         52.         -0.28974825  2.        ]
+ [23.         56.         -0.63789232  4.        ]
+ [29.         55.         -0.19329673  2.        ]
+ [58.         66.         -0.08214783  5.        ]
+ [56.         12.         -0.83630688  2.        ]
+ [40.         29.         -0.61768343  2.        ]
+ [ 8.         26.          1.69807171  3.        ]
+ [16.         30.         -0.87213173  2.        ]
+ [47.         33.          1.12211833  4.        ]]
+[2023-08-27 22:22:36,241] 131 root - INFO - Test_arr Dataframe Head:
+[[-1.00000000e+00 -1.00000000e+00 -8.85910521e-01  3.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -8.89584865e-01  4.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00  1.32801281e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -8.57434357e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -8.61108701e-01  2.00000000e+00]
+ [ 4.20000000e+01 -1.00000000e+00  5.00235655e-01  1.40000000e+01]
+ [-1.00000000e+00 -1.00000000e+00 -1.32538828e-02  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -8.40899810e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -8.32632537e-01  7.00000000e+00]
+ [ 4.20000000e+01 -1.00000000e+00  5.00235655e-01  1.10000000e+01]
+ [-1.00000000e+00 -1.00000000e+00 -9.00607896e-01  4.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -2.08912687e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00  1.20938400e+00  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -4.09164421e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -1.76762179e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -6.90251717e-01  3.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -8.03237787e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -3.89874116e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00  5.11783592e-03  9.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -9.58478810e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00  2.19778246e+00  2.40000000e+01]
+ [-1.00000000e+00 -1.00000000e+00  9.42206716e-02  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -7.26076568e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -7.18727881e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -4.81601483e-02  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -7.75548982e-02  3.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -7.32506670e-01  2.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -5.56138170e-01  3.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -5.56138170e-01  7.00000000e+00]
+ [-1.00000000e+00 -1.00000000e+00 -9.22522732e-02  2.00000000e+00]]
+[2023-08-27 22:22:36,241] 138 root - INFO - Preprocessor pickle file saved
+[2023-08-27 22:22:36,241] 22 root - INFO - Splitting Dependent & Independent Variables From Train & Test Dataset
+[2023-08-27 22:22:36,252] 43 root - INFO - Model Report : {'LinearRegression': 224.76, 'Lasso': 232.91, 'Ridge': 224.81, 'ElasticNet': 230.56}
+[2023-08-27 22:22:36,252] 57 root - INFO - Best Model Found, Model Name : Lasso, R2 Score :232.91

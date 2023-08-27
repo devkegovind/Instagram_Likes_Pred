@@ -102,7 +102,7 @@ class DataTransformation:
 
             target_column_name = 'Time since posted (hours)'
 
-            drop_columns = [target_column_name, 'Caption', 'Likes']
+            drop_columns = [target_column_name, 'Caption', 'Likes', 'Unnamed: 0']
 
             input_feature_train_df = train_df.drop(columns = drop_columns, axis = 1)
 
@@ -112,6 +112,11 @@ class DataTransformation:
 
             target_feature_test_df = test_df[target_column_name]
 
+            logging.info(f"Input_feature_train_df Head:\n{input_feature_train_df.head().to_string()}")
+            logging.info(f"Target_feature_train_df Head:\n{target_feature_train_df.head().to_string()}")
+            logging.info(f"Input_feature_test_df Head:\n{input_feature_test_df.head().to_string()}")
+            logging.info(f"Target_feature_test_df Head:\n{target_feature_test_df.head().to_string()}")
+
             # Transforming using Preprocessor Obj
             input_feature_train_arr = preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr = preprocessing_obj.transform(input_feature_test_df)
@@ -120,6 +125,10 @@ class DataTransformation:
 
             train_arr = np.c_[input_feature_train_arr, np.array(target_feature_train_df)]
             test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
+
+
+            logging.info(f"Train_arr Dataframe Head:\n{train_arr}")
+            logging.info(f"Test_arr Dataframe Head:\n{test_arr}")
 
             save_object(
                 file_path = self.data_transformation_config.preprocessor_obj_file_path,
@@ -142,7 +151,11 @@ class DataTransformation:
 
 
 
-
+if __name__ == "__main__":
+    obj = DataIngestion()
+    train_data_path, test_data_path = obj.initiate_data_ingestion()
+    data_transformation = DataTransformation()
+    train_arr, test_arr,_ = data_transformation.initiate_data_transformation(train_data_path, test_data_path)
         
 
         
