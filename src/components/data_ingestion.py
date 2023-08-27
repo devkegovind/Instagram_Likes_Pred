@@ -28,7 +28,7 @@ class DataIngestion:
         try:
 
             # Import Dataset
-            df = pd.read_csv(os.path.join('D:\\instagram\\data\\inst.csv'))
+            df = pd.read_csv(os.path.join('D:\instagram\data\inst1.csv'))
 
             logging.info("Dataset Read as Pandas DataFrame")
 
@@ -59,6 +59,3 @@ class DataIngestion:
             raise CustomException(e, sys)
 
 
-if __name__ == "__main__":
-    obj = DataIngestion()
-    train_data_path, test_data_path = obj.initiate_data_ingestion()
