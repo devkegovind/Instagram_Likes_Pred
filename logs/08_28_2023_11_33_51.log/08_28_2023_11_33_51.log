@@ -1,9 +1,0 @@
-[2023-08-28 11:33:51,054] 187 werkzeug - WARNING -  * Debugger is active!
-[2023-08-28 11:33:51,061] 187 werkzeug - INFO -  * Debugger PIN: 144-317-227
-[2023-08-28 11:33:51,127] 187 werkzeug - WARNING -  * Debugger is active!
-[2023-08-28 11:33:51,134] 187 werkzeug - INFO -  * Debugger PIN: 144-317-227
-[2023-08-28 11:33:51,185] 187 werkzeug - WARNING -  * Debugger is active!
-[2023-08-28 11:33:51,187] 187 werkzeug - INFO -  * Debugger PIN: 144-317-227
-[2023-08-28 11:34:02,568] 187 werkzeug - INFO -  * Detected change in 'D:\\instagram\\app.py', reloading
-[2023-08-28 11:34:02,608] 187 werkzeug - INFO -  * Detected change in 'D:\\instagram\\app.py', reloading
-[2023-08-28 11:34:02,659] 187 werkzeug - INFO -  * Detected change in 'd:\\instagram\\app.py', reloading

@@ -1,3 +1,0 @@
-[2023-08-28 11:56:21,809] 187 werkzeug - WARNING -  * Debugger is active!
-[2023-08-28 11:56:21,810] 187 werkzeug - INFO -  * Debugger PIN: 144-317-227
-[2023-08-28 11:58:04,795] 187 werkzeug - INFO -  * Detected change in 'd:\\instagram\\src\\pipeline\\prediction_pipeline.py', reloading

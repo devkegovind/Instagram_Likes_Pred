@@ -1,5 +1,0 @@
-[2023-08-28 10:46:23,306] 187 werkzeug - WARNING -  * Debugger is active!
-[2023-08-28 10:46:23,306] 187 werkzeug - INFO -  * Debugger PIN: 144-317-227
-[2023-08-28 10:53:01,738] 187 werkzeug - INFO - 127.0.0.1 - - [28/Aug/2023 10:53:01] "GET / HTTP/1.1" 200 -
-[2023-08-28 10:53:01,826] 187 werkzeug - INFO - 127.0.0.1 - - [28/Aug/2023 10:53:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-[2023-08-28 10:53:35,919] 187 werkzeug - INFO -  * Detected change in 'd:\\instagram\\app.py', reloading
