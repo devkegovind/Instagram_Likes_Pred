@@ -35,20 +35,21 @@ class CustomData:
                  Followers:int,
                  Hashtags: str):
         self.USERNAME = USERNAME
-        self.Follwers = Followers
+        self.Followers = Followers
         self.Hashtags = Hashtags
 
     def get_data_as_dataframe(self):
         try:
             custom_data_input_dict = {
                 'USERNAME' : [self.USERNAME],
-                'Followers' : [self.Follwers],
+                'Followers' : [self.Followers],
                 'Hashtags' : [self.Hashtags]
             }
 
             df = pd.DataFrame(custom_data_input_dict)
             logging.info('Dataframe Gathered')
             return df
+        
         except Exception as e:
             logging.info("Exception Occured in Prediction Pipeline")
             raise CustomException(e,sys)

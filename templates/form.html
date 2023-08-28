@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <form action = "{{url_for('predict_datapoint')}}" method = "POST">
+            <div class="form-group">
+                <label for="USERNAME">USERNAME:</label>
+                <select id="USERNAME" name="USERNAME">
+                    <input type = "text" id = "USERNAME" name = "USERNAME" placeholder = "Enter the Followers value(str)">
+                </select>
+            </div>
+            
+            
+
+        <div class = "form-group">
+            <label for = "Followers">Followers:</label>
+            <input type = "text" id = "Followers" name = "Followers" placeholder = "Enter the Followers value(int)">
+        </div>
+
+        <div class = "form-group">
+            <label for = "Hashtags">Hashtags</label>
+            <select id = "Hashtags" name = "Hashtags"></select>
+            <input type = "text" id = "Hashtags" name = "Hashtags" placeholder = "Enter the Followers value(str)">
+                   
+                </select>
+            </div>
+            
+        </div>
+
+        <div style = "clear:both;"></div>
+        <input type = "submit" value = "Submit">
+
+    </form>
+    </body>
+</html>
