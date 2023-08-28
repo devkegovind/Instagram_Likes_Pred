@@ -4,3 +4,4 @@
  * Running on http://172.16.102.104:5000
 [2023-08-28 12:17:11,070] 187 werkzeug - INFO - [33mPress CTRL+C to quit[0m
 [2023-08-28 12:17:11,071] 187 werkzeug - INFO -  * Restarting with stat
+[2023-08-28 12:18:01,015] 187 werkzeug - INFO -  * Restarting with stat
